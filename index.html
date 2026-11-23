@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter — Restez informé</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">Automatisation n8n • Démo Formule Pro</div>
+      <h1>Recevez nos meilleurs conseils<br><span>directement dans votre boîte mail</span></h1>
+      <p class="hero-sub">Inscrivez-vous gratuitement et recevez une séquence email personnalisée conçue pour vous aider à réussir.</p>
+
+      <!-- FORMULAIRE -->
+      <form id="newsletter-form" class="form-card">
+        <h2>Inscription gratuite</h2>
+        <p class="form-desc">Rejoignez notre communauté et recevez 3 emails précieux dans les 7 prochains jours.</p>
+
+        <div class="field-group">
+          <div class="field">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+          </div>
+        </div>
+
+        <button type="submit" id="submit-btn">
+          <span id="btn-text">Je m'inscris gratuitement →</span>
+          <span id="btn-loading" style="display:none;">Inscription en cours...</span>
+        </button>
+
+        <p class="form-legal">Pas de spam. Désabonnement en 1 clic. Vos données restent privées.</p>
+      </form>
+
+      <!-- SUCCÈS -->
+      <div id="success-card" class="success-card" style="display:none;">
+        <div class="success-icon">✅</div>
+        <h2>Vous êtes inscrit(e) !</h2>
+        <p>Vérifiez votre boîte mail — votre premier email de bienvenue vient d'être envoyé.</p>
+        <div class="success-timeline">
+          <div class="tl-item done">
+            <span class="tl-dot">✓</span>
+            <span><strong>Maintenant</strong> — Email de bienvenue</span>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot">3</span>
+            <span><strong>Dans 3 jours</strong> — Conseils utiles</span>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot">7</span>
+            <span><strong>Dans 7 jours</strong> — Offre spéciale</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CE QUE VOUS RECEVEZ -->
+  <section class="sequence">
+    <div class="container">
+      <h2 class="section-title">Ce que vous allez recevoir</h2>
+      <p class="section-sub">Une séquence automatique de 3 emails, envoyée au bon moment.</p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-day">J+0</div>
+          <div class="card-icon">👋</div>
+          <h3>Email de bienvenue</h3>
+          <p>Reçu immédiatement après votre inscription. Un email chaleureux qui vous présente ce qui vous attend.</p>
+        </div>
+        <div class="card card-featured">
+          <div class="card-day">J+3</div>
+          <div class="card-icon">💡</div>
+          <h3>Conseils utiles</h3>
+          <p>3 jours après, nos meilleurs conseils pratiques pour vous aider à passer à l'action rapidement.</p>
+        </div>
+        <div class="card">
+          <div class="card-day">J+7</div>
+          <div class="card-icon">🎁</div>
+          <h3>Offre spéciale</h3>
+          <p>7 jours après, une offre exclusive réservée uniquement à nos abonnés les plus engagés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POWERED BY -->
+  <section class="powered">
+    <div class="container">
+      <p>Automatisation propulsée par</p>
+      <div class="tech-badges">
+        <span class="tech">⚡ n8n</span>
+        <span class="tech">📧 Gmail</span>
+        <span class="tech">🔗 Webhook</span>
+      </div>
+      <p class="powered-note">Cette démo illustre la <strong>Formule Pro</strong> — séquence email entièrement automatisée avec n8n.</p>
+    </div>
+  </section>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
